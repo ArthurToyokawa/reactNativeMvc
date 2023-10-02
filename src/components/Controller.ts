@@ -4,12 +4,8 @@ export default class Controller {
   private model: Model;
 
   constructor() {
-    this.model = new Model();
+    this.model = Model.getInstance();
   }
-
-  test = () => {
-    console.log('this.btn');
-  };
 
   getCount = () => {
     return this.model.getCount();
